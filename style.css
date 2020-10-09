@@ -1,62 +1,86 @@
-
-
 * {
-	margin: 0;
 	box-sizing: border-box;
+	margin: 0;
 }
 
 body {
-	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif"
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif"
+}
+
+/* Navigation */
+.nav-container {
+	background: #FFFFFF;
+	box-shadow: 0px 8px 24px rgba(0,0,0,0.1);
+	height: 70.9px;
 }
 
 .wrapper {
-	width: 1440px;
+	max-width: 1440px;
 	margin: 0 auto;
-	padding: 0 22px;
 }
 
-/*Header Navigation */
-
-.desktop-nav {
+nav {
 	display: flex;
-	justify-content: space-between;
 	align-items: center;
-	background: white;
-	box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.1);
-	position: fixed;
-	z-index: 200;
-	width: calc(1440px - 44px);
-	top: 22px;
+	justify-content: space-between;
+	height: 70.9px;
+	padding-top: 20px;
 }
 
-.desktop-nav .menu-items {
+nav ul {
 	display: flex;
-	list-style-type: none;
+	align-items: center;
+	justify-content: space-between;
 }
 
-.desktop-nav .menu-items li {
-	margin: 30px 29.4px 5px;
+nav ul {
+	display: flex;
 }
 
-.desktop-nav .menu-items li:nth-last-of-type(1) {
-	margin-right: 0;
+.nav-items li {
+	list-style: none;
+	margin-right: 100px;
+	
 }
 
-.desktop-nav .menu-items li a {
+.nav-items li:nth-last-of-type(1) {
+	margin: 0;
+}
+
+.nav-items li a {
+	color: #000000;
+	font-size: 14px;
+	font-family: Montserrat;
 	text-decoration: none;
-	color: black;
-	font-size: 16px;
-	font-weight: bold;
-	
 }
 
-.desktop-nav .menu-items li a.btn {
-	
+/*header container*/
+.header-container {
+	background: #fffff0 url("images/head-bg.png");
+	background-repeat: no-repeat;
+	background-position: right;
+	background-size: contain;
+	height: calc(100vh - 72px);
+	display: flex;
+	align-content: center;
 }
 
-a.btn {
-	
+header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 }
+
+header h1 {
+	Font: Montserrat;
+	WeightL: 700;
+	Style: normal;
+	Size: 64px;
+	Line Height: 78.02px;
+}
+
+
+
 
 
 
