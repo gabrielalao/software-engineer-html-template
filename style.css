@@ -1,0 +1,65 @@
+
+
+* {
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif"
+}
+
+.wrapper {
+	width: 1440px;
+	margin: 0 auto;
+	padding: 0 22px;
+}
+
+/*Header Navigation */
+
+.desktop-nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: white;
+	box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.1);
+	position: fixed;
+	z-index: 200;
+	width: calc(1440px - 44px);
+	top: 22px;
+}
+
+.desktop-nav .menu-items {
+	display: flex;
+	list-style-type: none;
+}
+
+.desktop-nav .menu-items li {
+	margin: 30px 29.4px 5px;
+}
+
+.desktop-nav .menu-items li:nth-last-of-type(1) {
+	margin-right: 0;
+}
+
+.desktop-nav .menu-items li a {
+	text-decoration: none;
+	color: black;
+	font-size: 16px;
+	font-weight: bold;
+	
+}
+
+.desktop-nav .menu-items li a.btn {
+	
+}
+
+a.btn {
+	
+}
+
+
+
+
+
+
