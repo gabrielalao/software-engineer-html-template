@@ -2194,6 +2194,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 12px;
   text-transform: auto;
   outline: none;
+	
 }
 
 .nav-menu li:hover > a {
@@ -2208,7 +2209,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 22px 0 0 0;
   padding: 10px;
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
-  background: #fff;
+  background: hsla(0,0%,100%,0.35);
 }
 
 .nav-menu ul li {
@@ -2483,8 +2484,11 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 /*-------- Start Banner Area ------------*/
 .banner-area {
-  background: #f9f9ff;
+	background-image: url("../images/Mask Group.png");
+	background-repeat: no-repeat;
+	background-position: right;
 }
+
 
 .banner-area .fullscreen {
   height: 750px !important;
@@ -2539,6 +2543,12 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 /*-------- End Banner Area ------------*/
 /*-------- Start home-about Area ------------*/
+
+.home-about-area {
+	background-image: url("../"../images/Rectangle 3.png"");
+	background-repeat: no-repeat;
+	background-position: right;
+}
 @media (max-width: 767px) {
   .home-about-right {
     margin-top: 30px;
