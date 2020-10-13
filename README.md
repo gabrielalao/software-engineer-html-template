@@ -1,2 +1,2 @@
-# software-engineer-html-template
-HTML template for software engineers
+# simple template for software engineer portfolio
+Simple template for software engineer portfolio
