@@ -4574,7 +4574,7 @@ body {
   margin: 100px auto;
 }
 #playme {
-  background: #007fed;
+  background: auto;
   text-transform: uppercase;
   font-weight: 300;
   border: none;
