@@ -2734,7 +2734,9 @@ body.mobile-nav-active #mobile-nav-toggle {
 /*--------- End Portfolio Area -------------*/
 /*--------- start testimonial area  -------------*/
 .testimonial-area {
-  background-color: #f9f9ff;
+  	background-image: url("../images/Mask Group.png");
+	background-repeat: no-repeat;
+	background-position: right;
 }
 
 .testimonial-area .owl-controls {
@@ -4328,7 +4330,7 @@ dl.accordion.time-line:before {
 /*  Footer Styles
 /* =================================== */
 .footer-area {
-  background-color: #04091e;
+  background-color: #202020;
 }
 
 .single-footer-widget h4 {
