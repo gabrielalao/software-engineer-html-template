@@ -70,6 +70,19 @@
 							<a href="#"><img src="https://raw.githubusercontent.com/gabrielalao/software-engineer-html-template/main/images/Github.svg" alt=""/> </a>
 							<a href="#"><img src="https://raw.githubusercontent.com/gabrielalao/software-engineer-html-template/main/images/Lets%20Start%20a%20Project.png" width="231" height="53" alt=""/></a>
 							<a href="#"><img src="https://raw.githubusercontent.com/gabrielalao/software-engineer-html-template/main/images/Play%20Video.png" width="86" height="85" alt=""/>PLAY VIDEO BIO</a></a>
+	<div id="light">
+  <a class="boxclose" id="boxclose" onclick="lightbox_close();"></a>
+  <video id="VisaChipCardVideo" width="600" controls>
+    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+    <!--Browser does not support <video> tag -->
+  </video>
+</div>
+
+<div id="fade" onClick="lightbox_close();"></div>
+
+<div>
+  <a href="#" onclick="lightbox_open();">Watch video</a>
+</div>
 							
 							<br />
 					   <a href="#"> <img src="https://raw.githubusercontent.com/gabrielalao/software-engineer-html-template/main/images/Location.svg" alt=""/> </div></a>
@@ -294,6 +307,25 @@
 
 <p>Neque porro quisquam est qui dolorem ipsum quia<br />dolor sit amet, consectetur, adipisci velit..."<br />
 "There is no one who loves pain itself, who seeks after<br />it and wants to have it, simply because it is pain..."</p>
+							<div>
+							<input type="checkbox" name="showForm" id="showForm" class="showForm">
+
+<div class="form">
+  <h2>Contact Us</h2>
+  <form>
+    <div class="left section">
+      <input type="text" name="name" placeholder="Your name" required>
+      <input type="email" name="email" placeholder="Your email" required>
+      <input type="tel" name="tel" placeholder="Your telephone number" required>
+    </div>
+    <div class="right section">
+      <textarea name="comment" placeholder="Your comment" required></textarea>
+    </div>
+    <button type="submit" class="sendForm left">Send</button>
+    <label for="showForm" class="closeFormLabel left">Cancel</label>
+  </form>
+</div>
+							</div>
 					    <img src="https://raw.githubusercontent.com/gabrielalao/software-engineer-html-template/main/images/Lets Start a Project upwork.png" width="265" height="53" alt=""/> </div>
 						<div class="col-lg-5 col-md-6 home-about-right">
 						  <img class="img-fluid" src="/images/" alt="">
@@ -355,3 +387,4 @@
 			<script src="js/main.js"></script>	
 		</body>
 	</html>
+
