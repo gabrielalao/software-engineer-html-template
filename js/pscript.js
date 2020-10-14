@@ -12,3 +12,14 @@ function hideVideo(div,video_id) {
   document.getElementById(video_id).src = cleaned;
   document.getElementById(div).style.display = 'none';
 }
+
+
+
+//function for footer contact form//
+$( '.js-input' ).keyup(function() {
+  if( $(this).val() ) {
+     $(this).addClass('not-empty');
+  } else {
+     $(this).removeClass('not-empty');
+  }
+});
