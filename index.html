@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="assets/css/untitled-1.css">
     <link rel="stylesheet" href="assets/css/untitled-2.css">
     <link rel="stylesheet" href="assets/css/untitled.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
 	
 	
 </head>
@@ -79,7 +81,7 @@
 	</div>
         </div>
     </div>
-    <div class="container" style="height: 265px;"><img src="assets/img/skills.svg">
+    <div class="container" style="height: auto;"><img src="assets/img/skills.svg">
         <ul class="nav nav-fill float-right" style="margin: 0px;padding: 0;padding-right: 0;padding-top: 0;padding-bottom: 0;">
             <li class="nav-item"><a class="nav-link active" href="#">ALL</a></li>
             <li class="nav-item"><a class="nav-link" href="#">FRONTEND DEVELOPMENT</a></li>
@@ -87,6 +89,34 @@
         </ul>
 		
     </div>
+	
+	
+	<!-- start of logo slider -->
+	<div class="container">
+	<div class="logo-slider">
+	<!-- logo slider -->
+			<div class="item"><a href="#"><img src="images/CSS3.svg" alt=""></a>CSS3</div>
+			<div class="item"><a href="#"><img src="images/HTML 5.svg" alt=""></a>HTML5</div>
+			<div class="item"><a href="#"><img src="images/JAVASCRIPT.svg" alt=""></a>JAVASCRIPT</div>
+			<div class="item"><a href="#"><img src="images/WORDPRESS.svg" alt=""></a>WORDPRESS</div>
+			<div class="item"><a href="#"><img src="images/JAVASCRIPT.svg" alt=""></a>JAVASCRIPT</div>
+			
+	</div>
+	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+	<script>
+		$('.logo-slider').slick({
+			slidesToShow: 5,
+			slidesToScroll: 1,
+			dots: true,
+			arrows: true,
+			autoplay: true,
+			autoplaySpeed: 2000,
+			infinte: true,
+		});
+	</script>
+	<!-- end of logo slider-->
 	
 	
 	
@@ -106,18 +136,10 @@
         </div>
 		
 		<!-- Start portfolio-area Area -->
-            <section class="portfolio-area section-gap" id="portfolio">
-                <div class="container">
-                    <div class="filters">
-                        <ul>
-							<li><img src="images/portfolioheader.svg" width="304" height="63" alt=""/></li>
-                            <li class="active" data-filter="*">All</li>
-                            <li data-filter=".vector">WEB DESIGN &#33; DEVELOPMENT</li>
-                            <li data-filter=".raster">REPOSITORIES</li>
-                        </ul>
-                    </div>
-					
-					
+		<div>
+            <img src="images/portfolioheader.svg" width="304" height="63" alt=""/>
+                            
+			
 					
 					
                     

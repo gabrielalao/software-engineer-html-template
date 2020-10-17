@@ -62,7 +62,7 @@
 }
 
 .container, .container-lg, .container-md, .container-sm, .container-xl {
-  padding-top: 120px;
+  padding-top: 20px;
 }
 
 #experience {
@@ -167,6 +167,46 @@ body {
   margin: 0;
 }
 
+
+/*logo slider styling */
+
+*{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		outline: none;
+		}
+		
+		}
+		.container{
+			max-width: 1040px;
+			margin-left: 30px;
+		}
+		.logo-slider .item{
+			background-color: transparent;
+			border-radius: 8px;
+			padding-left: 5px;
+		}
+		.logo-slider .slick-slide{
+			margin: 5px;
+		}
+		.slick-dots li.slick-active button:before{
+			color: #ff5722;
+		}
+		.slick-dots li button:before{
+			font-size: 12px;
+			
+		}
+		.slick-next:before,
+		.slick-prev:before{
+			color: #ff8159;
+			font-size: 24px;
+		}
+		.item:hover{
+			display: block;
+			transition: all ease 0.3s;
+			transform: scale(1.1) translateY(-5px);
+		}
 
 
 
