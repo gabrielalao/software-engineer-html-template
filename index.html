@@ -44,10 +44,10 @@
                 <h1>Full-Stack Software Engineer<br></h1>
                 <p id="headerp">I have experience working in a Tech Lead position, leading the front end and back end sides of high impact projects and setting the standards with best practices for other developers to collaborate better with each other.<br></p>
                 <p
-                    id="headericons"><a href="#"><img src="assets/img/UpWork.svg"> </a>
-					<a href="#"><img src="assets/img/Github.svg"><img src="assets/img/Lets%20Start%20a%20Project.svg"></a>
-					<div id="playme" onclick="revealVideo('video','youtube')">
-						<a href="#"><img id="play" src="assets/img/Play%20Video.svg" style="padding-left: 3px;"> PLAY VIDEOBIO</p></a></div>
+                    id="headericons"><a href="#"><img src="assets/img/UpWork.svg" class="img-fluid"> </a>
+					<a href="#"><img src="assets/img/Github.svg" class="img-fluid"><img src="assets/img/Lets%20Start%20a%20Project.svg" class="img-fluid"></a>
+			  <div id="playme" onclick="revealVideo('video','youtube')">
+						<a href="#"><img src="assets/img/Play%20Video.svg" class="img-fluid" id="play" style="padding-left: 3px;"> PLAY VIDEOBIO</p></a></div>
   
 
 
@@ -70,36 +70,36 @@
                     <p id="hlocation"><img src="assets/img/location1.svg">&nbsp;From: New York</p>
             </div>
             <div class="col-sm-12 col-md-6 col-lg-5 col-xl-5">
-				<img class="float-right" src="assets/img/Gabriel%20Alao%20-%20Vector%202.png">
-				</div>
+				<img class="float-right img-fluid" src="assets/img/Gabriel%20Alao%20-%20Vector%202.png">
+		  </div>
             <div class="col-auto col-sm-12 col-md-6 col-lg-2 col-xl-2 d-lg-flex d-xl-flex align-items-baseline align-content-center align-self-baseline mb-auto justify-content-lg-center align-items-lg-end align-items-xl-end">
-				<a href="#"><img class="float-right d-xl-flex align-items-xl-end" src="assets/img/fb.svg"></a>
-				<a href="#"><img class="float-right d-xl-flex align-items-xl-end" src="assets/img/yt.svg"></a>
-				<a href="#"><img class="float-right d-xl-flex align-items-xl-end" src="assets/img/in.png"></a>
-                <a href="#"><img class="float-right d-xl-flex align-items-xl-end" src="assets/img/tw.svg"></a>
-				<a href="#"><img class="float-right d-xl-flex align-items-xl-end" src="assets/img/ink.svg"></a>
+				<a href="#"><img class="float-right d-xl-flex align-items-xl-end img-fluid" src="assets/img/fb.svg"></a>
+				<a href="#"><img class="float-right d-xl-flex align-items-xl-end img-fluid" src="assets/img/yt.svg"></a>
+				<a href="#"><img class="float-right d-xl-flex align-items-xl-end img-fluid" src="assets/img/in.png"></a>
+                <a href="#"><img class="float-right d-xl-flex align-items-xl-end img-fluid" src="assets/img/tw.svg"></a>
+				<a href="#"><img class="float-right d-xl-flex align-items-xl-end img-fluid" src="assets/img/ink.svg"></a>
 	</div>
         </div>
     </div>
     <div class="container" style="height: auto;"><img src="assets/img/skills.svg">
         <ul class="nav nav-fill float-right" style="margin: 0px;padding: 0;padding-right: 0;padding-top: 0;padding-bottom: 0;">
-            <li class="nav-item"><a class="nav-link active" href="#">ALL</a></li>
+          <li class="nav-item"><a class="nav-link active" href="#">ALL</a></li>
             <li class="nav-item"><a class="nav-link" href="#">FRONTEND DEVELOPMENT</a></li>
             <li class="nav-item"><a class="nav-link" href="#">BACKEND DEVELOPMENT</a></li>
-        </ul>
+      </ul>
 		
-    </div>
+</div>
 	
 	
 	<!-- start of logo slider -->
 	<div class="container">
 	<div class="logo-slider">
 	<!-- logo slider -->
-			<div class="item"><a href="#"><img src="images/CSS3.svg" alt=""></a>CSS3</div>
-			<div class="item"><a href="#"><img src="images/HTML 5.svg" alt=""></a>HTML5</div>
-			<div class="item"><a href="#"><img src="images/JAVASCRIPT.svg" alt=""></a>JAVASCRIPT</div>
-			<div class="item"><a href="#"><img src="images/WORDPRESS.svg" alt=""></a>WORDPRESS</div>
-			<div class="item"><a href="#"><img src="images/JAVASCRIPT.svg" alt=""></a>JAVASCRIPT</div>
+			<div class="item"><a href="#"><img src="images/CSS3.svg" alt="" class="img-fluid"></a>CSS3</div>
+			<div class="item"><a href="#"><img src="images/HTML 5.svg" alt="" class="img-fluid"></a>HTML5</div>
+			<div class="item"><a href="#"><img src="images/JAVASCRIPT.svg" alt="" class="img-fluid"></a>JAVASCRIPT</div>
+	  <div class="item"><a href="#"><img src="images/WORDPRESS.svg" alt="" class="img-fluid"></a>WORDPRESS</div>
+			<div class="item"><a href="#"><img src="images/JAVASCRIPT.svg" alt="" class="img-fluid"></a>JAVASCRIPT</div>
 			
 	</div>
 	</div>
@@ -114,6 +114,34 @@
 			autoplay: true,
 			autoplaySpeed: 2000,
 			infinte: true,
+			responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
 		});
 	</script>
 	<!-- end of logo slider-->
@@ -126,7 +154,7 @@
         <p class="d-print-none d-sm-inline d-md-none d-lg-none d-xl-none"><br><img src="assets/img/exheader.svg">You don't just need a website. You need a product that makes people want<br> to stick around, whether it's a SPA or a full-featured web app.<br>Whether you're a client trying to meet specific business goals&nbsp;with
             your web presence or an agency wanting to provide your clients with the best solutions, I am here to be your partner.<br>I have experience working in a Tech Lead position, leading the front end and<br> back end sides of high impact projects
             and setting the standards with best practices for other developers to collaborate better with each other.<br><br></p>
-        <div class="jumbotron" style="background: url(&quot;assets/img/gabriel.svg&quot;) right / contain no-repeat, rgba(233,236,239,0.01);max-height: 667px;">
+      <div class="jumbotron" style="background: url(&quot;assets/img/gabriel.svg&quot;) right / contain no-repeat, rgba(233,236,239,0.01);max-height: 667px;">
             <div class="row d-xl-flex align-self-center align-items-xl-center" style="margin: -32px;margin-right: 410px;border-radius: 0px;background: #f6f6f6;border-top-right-radius: 30px;border-bottom-right-radius: 30px;height: 494px;">
                 <div class="col-auto col-sm-auto col-xl-12" style="height: 494px;">
                     <p class="d-print-block d-sm-none float-sm-none d-md-table-cell d-lg-table-row d-xl-block visible" id="exgab" style="margin: 68px;padding: 0px;margin-top: 20px;margin-bottom: 20px;font-size: 18px;padding-left: 0px;"><img src="assets/img/exheader.svg"><br><br> You don't just need a website. You need a product that makes people want to stick around, whether it's a SPA or a full-featured web app.<br><br>Whether you're a client trying to meet specific
@@ -135,16 +163,14 @@
                 </div>
             </div>
             <p id="headericons-1"></p>
-        </div>
+      </div>
 		
 		<!-- Start portfolio-area Area -->
 		<div>
-            <img src="images/portfolioheader.svg" width="304" height="63" alt=""/>
-                            
+            <img src="images/portfolioheader.svg" alt="" width="304" height="63" class="img-fluid"/>
 			
-					
-					
-                    
+			
+     
                   <div class="pcontainer">
 	<div class="port-slider">
 	<!-- port slider -->
@@ -194,9 +220,9 @@
   ]
 });
 	</script>
-                    </div>
+      </div>
                     
-                </div>
+</div>
             </section>
             <!-- End portfolio-area Area -->
 <br />
@@ -259,7 +285,7 @@
     <div class="footer-clean" style="padding-bottom: 0px;">
         <footer style="background: #202020;height: 232px;">
             <div class="container">
-                <div class="row justify-content-center" style="padding-top: 0px;padding-bottom: 0px;">
+                <div class="row justify-content-center" style="padding-top: 25px;padding-bottom: 0px;">
                     <div class="col-sm-1 col-md-1 col-lg-4 col-xl-4 mt-sm-auto item" style="background: #202020;">
                         <h3 style="color: rgb(255,255,255);">Email</h3>
                         <ul style="color: rgb(255,255,255);">
