@@ -205,8 +205,32 @@ body {
 		.item:hover{
 			display: block;
 			transition: all ease 0.3s;
-			transform: scale(1.1) translateY(-5px);
+			transform: scale(0.7) translateY(-3px);
 		}
+
+
+/*portfolio slider*/
+*{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		outline: none;
+		}
+		
+		}
+		.pcontainer{
+			max-width: 1040px;
+			margin-left: 20px;
+		}
+		.port-slider .item{
+			background-color: transparent;
+			border-radius: 8px;
+			padding-left: 5px;
+		}
+		.port-slider .slick-slide{
+			margin: 5px;
+		}
+		
 
 
 

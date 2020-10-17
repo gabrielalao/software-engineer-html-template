@@ -41,7 +41,6 @@
         <div class="row">
             <div class="col-sm-12 col-md-6 col-lg-5 col-xl-5">
 				<br />
-				<br />
                 <h1>Full-Stack Software Engineer<br></h1>
                 <p id="headerp">I have experience working in a Tech Lead position, leading the front end and back end sides of high impact projects and setting the standards with best practices for other developers to collaborate better with each other.<br></p>
                 <p
@@ -146,47 +145,55 @@
 					
 					
                     
-                  <div class="filters-content">
-                        <div class="row grid">
-                            <div class="single-portfolio col-sm-4 all vector">
-                            	<div class="relative">
-	                            	<div class="thumb col-lg-12">
-	                            		<div class="overlay overlay-bg col-lg-12"></div>
-                            		  <img class="image img-fluid" src="/assets/img/p1.svg" alt="">
-	                            	</div>								</a>                              		
-                            	</div>
-								<div class="p-inner">
-								    <h4>Vue Admin Dashboard</h4>
-								</div>					                               
-                            </div>
-                            <div class="single-portfolio col-sm-4 all raster">
-                            	<div class="relative">
-	                            	<div class="thumb col-lg-12">
-	                            		<div class="overlay overlay-bg col-lg-3"></div>
-                            		  <img class="image img-fluid" src="/assets/img/p2.svg" alt="">
-	                            	</div>                      		
-                            	</div>
-								<div class="p-inner">
-								    <h4>Heroes Meet Dating App</h4>
-								</div>					                               
-                            </div>                            
-                            <div class="single-portfolio col-sm-4 all ui">
-                            	<div class="relative">
-	                            	<div class="thumb col-lg-12">
-	                            		<div class="overlay overlay-bg col-lg-3"></div>
-	                            		 <img class="image img-fluid" src="/assets/img/p3.svg" alt="">
-	                            	</div>
-									
-	                            		
-	                           	</div>
-                                <div class="p-inner">
-                                    <h4>Vue Landing Page</h4>
-                                </div>
-                            </div>
-                            
-                            
-                            </div>
-                        </div>
+                  <div class="pcontainer">
+	<div class="port-slider">
+	<!-- logo slider -->
+			<div class="item"><a href="#"><img src="images/p1.svg" alt=""></a></div>
+			<div class="item"><a href="#"><img src="images/p2.svg" alt=""></a></div>
+			<div class="item"><a href="#"><img src="images/p3.svg" alt=""></a></div>
+			<div class="item"><a href="#"><img src="images/p4.svg" alt=""></a></div>
+			
+	</div>
+	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+	<script>
+		$('.port-slider').slick({
+  dots: true,
+  infinite: false,
+  speed: 300,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+});
+	</script>
                     </div>
                     
                 </div>
