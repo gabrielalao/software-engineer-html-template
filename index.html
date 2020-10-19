@@ -81,29 +81,44 @@
 	</div>
         </div>
     </div>
-    <div class="container" style="height: auto;"><img src="assets/img/skills.svg">
-       
-		
-</div>
-	<br />
-	
-	
+    <div class="row" style="height: auto;">
+		<div class="container">
+			<img src="assets/img/skills.svg">
+		   	<div class="d-md-flex float-right" id="logoctrl">
+				<a href="#" class="logo-prev">
+					<img src="images/icon arow1.svg" width="auto" height="auto" alt="" class="img-fluid mr-3"/>
+				</a>
+				<a href="#" class="logo-next">
+					<img src="images/icon arrow.svg" width="auto" height="auto" alt="" class="img-fluid"/>
+				</a>
+			</div>
+		</div>				
+	</div>	
 	<!-- start of logo slider -->
 	<div class="lcontainer">
-	<div class="logo-slider">
-	<!-- logo slider -->
-			<div class="item"><a href="#"><img src="images/CSS3.svg" alt="" class="img-fluid"></a>CSS3</div>
-			<div class="item"><a href="#"><img src="images/HTML 5.svg" alt="" class="img-fluid"></a>HTML5</div>
-			<div class="item"><a href="#"><img src="images/JAVASCRIPT.svg" alt="" class="img-fluid"></a>JAVASCRIPT</div>
-	  <div class="item"><a href="#"><img src="images/WORDPRESS.svg" alt="" class="img-fluid"></a>WORDPRESS</div>
-			<div class="item"><a href="#"><img src="images/JAVASCRIPT.svg" alt="" class="img-fluid"></a>JAVASCRIPT</div>
-			
-	</div>
+		<div class="logo-slider">
+		<!-- logo slider -->
+				<div class="item"><a href="#"><img src="images/CSS3.svg" alt="" class="img-fluid"></a>CSS3</div>
+				<div class="item"><a href="#"><img src="images/HTML 5.svg" alt="" class="img-fluid"></a>HTML5</div>
+				<div class="item"><a href="#"><img src="images/JAVASCRIPT.svg" alt="" class="img-fluid"></a>JAVASCRIPT</div>
+		  <div class="item"><a href="#"><img src="images/WORDPRESS.svg" alt="" class="img-fluid"></a>WORDPRESS</div>
+				<div class="item"><a href="#"><img src="images/JAVASCRIPT.svg" alt="" class="img-fluid"></a>JAVASCRIPT</div>
+
+		</div>
 	</div>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+	<script src="js/slick.min.js"></script>
 	<script>
-		$('.logo-slider').slick({
+		var logoSlider=$('.logo-slider');
+		 $(".logo-next").click(function(e){					
+			e.preventDefault();					 
+			logoSlider.slick('slickNext');
+		});
+		 $(".logo-prev").click(function(e){					
+			e.preventDefault();					 
+			logoSlider.slick('slickPrev');				 
+		});
+		logoSlider.slick({
 			slidesToShow: 5,
 			slidesToScroll: 1,
 			dots: true,
@@ -145,9 +160,10 @@
 	
 	
     <div id="extab">
-        <p class="d-print-none d-sm-inline d-md-none d-lg-none d-xl-none"><br><img src="assets/img/exheader.svg">You don't just need a website. You need a product that makes people want<br> to stick around, whether it's a SPA or a full-featured web app.<br>Whether you're a client trying to meet specific business goals&nbsp;with
-            your web presence or an agency wanting to provide your clients with the best solutions, I am here to be your partner.<br>I have experience working in a Tech Lead position, leading the front end and<br> back end sides of high impact projects
-            and setting the standards with best practices for other developers to collaborate better with each other....<img src="assets/img/upworkhire.svg "><br>
+        <p class="d-print-none d-sm-inline d-md-none d-lg-none d-xl-none"><br><img src="assets/img/exheader.svg">
+			You don't just need a website. You need a product that makes people want to stick around, whether it's a SPA or a full-featured web app. Whether you're a client trying to meet specific business goals with your web presence or an agency wanting to provide your clients with the best solutions, I am here to be your partner.
+			<br>I have experience working in a Tech Lead position, leading the front end and back end sides of high impact projects and setting the standards with best practices for other developers to collaborate better with each other.
+			<br><a href="#"><img src="assets/img/upworkhire.svg"></a><br>
 		
 	</p><br></p>
 		
@@ -157,7 +173,7 @@
                 <div class="col-auto col-sm-auto col-xl-12" style="height: 494px;">
                     <p class="d-print-block d-sm-none float-sm-none d-md-table-cell d-lg-table-row d-xl-block visible" id="exgab" style="margin: 68px;padding: 0px;margin-top: 20px;margin-bottom: 20px;font-size: 18px;padding-left: 0px;"><img src="assets/img/exheader.svg"><br><br> You don't just need a website. You need a product that makes people want to stick around, whether it's a SPA or a full-featured web app.<br><br>Whether you're a client trying to meet specific
                         business goals&nbsp;with your web presence or an agency wanting to provide your clients with the best solutions, I am here to be your partner.<br> <br> I have experience working in a Tech Lead position, leading the front end and
-                        back end sides of high impact projects and setting the standards with best practices for other developers to collaborate better with each other.<br><img class="d-md-none d-lg-none d-xl-none" src="assets/img/gabrielmobile.svg"><br><img src="assets/img/upworkhire.svg"><br><br></p>
+                        back end sides of high impact projects and setting the standards with best practices for other developers to collaborate better with each other.<br><img class="d-md-none d-lg-none d-xl-none" src="assets/img/gabrielmobile.svg"><br><a href="#"><img src="assets/img/upworkhire.svg"></a><br><br></p>
                 </div>
             </div>
             <p id="headericons-1"></p>
@@ -165,59 +181,78 @@
 		
 		<!-- Start portfolio-area Area -->
 		<div>
-            <img src="images/portfolioheader.svg" alt="" width="304" height="63" class="img-fluid"/>
+			<div class="row">
+				<div class="container">
+					<img src="images/portfolioheader.svg" alt="" width="304" height="63" class="img-fluid" id="portcontrol"/>
+					<div class="d-md-flex float-right" id="portctrl">
+						<a href="#" class="port-prev">
+							<img src="images/icon arow1.svg" width="auto" height="auto" alt="" class="img-fluid mr-3"/>
+						</a>
+						<a href="#" class="port-next">
+							<img src="images/icon arrow.svg" width="auto" height="auto" alt="" class="img-fluid port-next"/>
+						</a>
+					</div>
+				</div>
+			</div>
 			
-			
-     
-                  <div class="pcontainer">
-	<div class="port-slider">
-	<!-- port slider -->
-			<div class="item"><a href="#"><img src="images/p1.svg" alt=""></a></div>
-			<div class="item"><a href="#"><img src="images/p2.svg" alt=""></a></div>
-			<div class="item"><a href="#"><img src="images/p3.svg" alt=""></a></div>
-			<div class="item"><a href="#"><img src="images/p4.svg" alt=""></a></div>
-			
-	</div>
-	</div>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
-	<script>
-		$('.port-slider').slick({
-  dots: true,
-  infinite: false,
-  speed: 300,
-  slidesToShow: 3,
-  slidesToScroll: 1,
-  responsive: [
-    {
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 1,
-        infinite: true,
-        dots: true
-      }
-    },
-    {
-      breakpoint: 600,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1
-      }
-    }
-    // You can unslick at a given breakpoint now by adding:
-    // settings: "unslick"
-    // instead of a settings object
-  ]
-});
-	</script>
+     		<div class="pcontainer">
+				<div class="port-slider">
+				<!-- port slider -->
+					<div class="item"><a href="#"><img src="images/p1.svg" alt="">VUE DASHBOARD</a></div>
+					<div class="item"><a href="#"><img src="images/p2.svg" alt=""></a></div>
+					<div class="item"><a href="#"><img src="images/p3.svg" alt=""></a></div>
+					<div class="item"><a href="#"><img src="images/p4.svg" alt=""></a></div>
+				</div>
+			</div>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+			<script src="js/slick.min.js"></script>
+			<script>
+				var portSlider=$('.port-slider');
+				 $(".port-next").click(function(e){					
+					e.preventDefault();					 
+					portSlider.slick('slickNext');
+				});
+				 $(".port-prev").click(function(e){					
+					e.preventDefault();					 
+					portSlider.slick('slickPrev');				 
+				});
+				
+				portSlider.slick({
+				  dots: true,
+				  infinite: true,
+				  speed: 300,
+				  slidesToShow: 3,
+				  slidesToScroll: 1,
+				  responsive: [
+					{
+					  breakpoint: 1024,
+					  settings: {
+						slidesToShow: 2,
+						slidesToScroll: 1,
+						infinite: true,
+						dots: true
+					  }
+					},
+					{
+					  breakpoint: 600,
+					  settings: {
+						slidesToShow: 1,
+						slidesToScroll: 1
+					  }
+					},
+					{
+					  breakpoint: 480,
+					  settings: {
+						slidesToShow: 1,
+						slidesToScroll: 1
+					  }
+					}
+					// You can unslick at a given breakpoint now by adding:
+					// settings: "unslick"
+					// instead of a settings object
+				  ]
+				});
+			</script>
       </div>
                     
 </div>

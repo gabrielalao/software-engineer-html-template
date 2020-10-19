@@ -43,6 +43,7 @@
   padding-left: 20px;
   font-size: 12px;
   font-weight: bold;
+	align-content: center;
 }
 
 #play {
@@ -80,6 +81,10 @@
   #hiremobile {
     display: visible;
   }
+	
+	#extab {
+		padding: 20px;
+	}
 
 }
 .brand-slider .sin-brand {}
