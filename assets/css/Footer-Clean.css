@@ -1,6 +1,6 @@
 .footer-clean {
-  padding: 50px 0;
-  background-color: #fff;
+  padding: 20px 0;
+  background-color: #202020;
   color: #4b4c4d;
 }
 
@@ -59,6 +59,7 @@
   margin-top: 22px;
   color: inherit;
   opacity: 0.75;
+	background-color: #202020;
 }
 
 .footer-clean .item.social > a:hover {
@@ -81,7 +82,7 @@
   margin-top: 14px;
   margin-bottom: 0;
   font-size: 13px;
-  opacity: 0.6;
+	background-color: #202020;
 }
 
 #contc {

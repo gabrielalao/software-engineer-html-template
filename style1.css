@@ -1,0 +1,34 @@
+@charset "utf-8";
+/* CSS Document */
+
+   .computer {
+    background-image: url(../img/big-pic.png);
+    width: 100%;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: contain; 
+}
+
+.phone {
+    background-image: url(../img/small-pic.png);
+    width: 100%;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+@media all and (max-width: 959px) {
+    .computer {display:block;}
+    .phone {display:none;}
+}
+
+@media all and (max-width: 479px) {
+    .computer {display:none;}
+    .phone {display:block;}
+}
+
+@media (max-width:800px) {
+  img#optionalstuff {
+    display: none;
+  }
+} 

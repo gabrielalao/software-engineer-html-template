@@ -71,7 +71,17 @@
 #exgab {
   padding-left: 0px;
 }
+@media (min-width: 300px) {
+  #exgab {
+    display: none;
+  }
+	
+@media (min-width: 300px) {
+  #hiremobile {
+    display: visible;
+  }
 
+}
 .brand-slider .sin-brand {}
 .brand-slider .sin-brand img {
   max-width: 140px;
@@ -178,7 +188,16 @@ body {
 		}
 		
 		}
-		.container{
+
+		#lcontainer {
+			border-radius: auto;
+			max-width: auto;
+			height: auto;
+			padding: 0px;
+			background: transparent;
+			margin: 0px auto;
+		}
+		.lcontainer{
 			max-width: 1040px;
 			margin-left: 30px;
 		}
@@ -229,6 +248,23 @@ body {
 		}
 		.port-slider .slick-slide{
 			margin: 5px;
+		}
+		.slick-dots li.slick-active button:before{
+			color: #ff5722;
+		}
+		.slick-dots li button:before{
+			font-size: 20px;
+			
+		}
+		.slick-next:before,
+		.slick-prev:before{
+			color: #2B539B;
+			font-size: 24px;
+		}
+		.item:hover{
+			display: block;
+			transition: all ease 0.3s;
+			transform: scale(0.7) translateY(-3px);
 		}
 		
 
