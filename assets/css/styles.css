@@ -137,6 +137,14 @@
     right: 3%;
   }
 }
+	
+#share-buttons img {
+	width: 35px;
+	padding: 5px;
+	border: 0;
+	box-shadow: 0;
+	display: inline;
+	}
 
 .video-container {  
     padding-bottom: 66.25%;
