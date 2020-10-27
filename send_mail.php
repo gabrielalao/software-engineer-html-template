@@ -17,12 +17,12 @@ $thankyou_page = "index.html";
 This next bit loads the form field data into variables.
 If you add a form field, you will need to add it here.
 */
-$email_address = $_REQUEST['email_address'] ;
+$email_address = $_REQUEST['email'] ;
 $comments = $_REQUEST['comments'] ;
-$first_name = $_REQUEST['first_name'] ;
+$first_name = $_REQUEST['name'] ;
 $msg = 
-"First Name: " . $first_name . "\r\n" . 
-"Email: " . $email_address . "\r\n" . 
+"First Name: " . $name . "\r\n" . 
+"Email: " . $email . "\r\n" . 
 "Comments: " . $comments ;
 
 /*
@@ -49,12 +49,12 @@ function isInjected($str) {
 }
 
 // If the user tries to access this script directly, redirect them to the feedback form,
-if (!isset($_REQUEST['email_address'])) {
+if (!isset($_REQUEST['email'])) {
 header( "Location: $feedback_page" );
 }
 
 // If the form fields are empty, redirect to the error page.
-elseif (empty($first_name) || empty($email_address)) {
+elseif (empty($name) || empty($email)) {
 header( "Location: $error_page" );
 }
 
@@ -62,7 +62,7 @@ header( "Location: $error_page" );
 If email injection is detected, redirect to the error page.
 If you add a form field, you should add it here.
 */
-elseif ( isInjected($email_address) || isInjected($first_name)  || isInjected($comments) ) {
+elseif ( isInjected($email) || isInjected($name)  || isInjected($comments) ) {
 header( "Location: $error_page" );
 }
 
