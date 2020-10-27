@@ -29,10 +29,7 @@
                 class="collapse navbar-collapse d-xl-flex justify-content-xl-end" id="navcol-1">
                 <ul class="nav navbar-nav d-lg-flex align-items-lg-end">
                     <li class="nav-item"><a class="nav-link" href="http://gabrielalao.com/Repositories.html">Repositories</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="https://github.com/gabrielalao?tab=projects">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Packages</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Clients</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Publications</a></li>
                 </ul><a href="https://calendly.com/thewebgurusllc"><img id="headerhire" src="assets/img/Hire%20Me%20-%20Button.svg"></a></div>
         </div>
@@ -47,9 +44,9 @@
                     id="headericons"><a href="https://www.upwork.com/fl/gabrielalao3"><img src="assets/img/UpWork.svg" class="img-fluid"> </a>
 			<a href="https://github.com/gabrielalao?tab=repositories"><img src="assets/img/Github.svg" class="img-fluid"></a>
 			<a href="https://www.upwork.com/fl/gabrielalao3"><img src="assets/img/Lets%20Start%20a%20Project.svg" class="img-fluid"></a>
-		    <div id="playme" onclick="revealVideo('video','youtube')">
-			    <a href="#"><img src="assets/img/Play%20Video.svg" class="img-fluid" id="play" style="padding-left: 3px;"> PLAY VIDEOBIO</p></a>
-		</div>
+		    <span id="playme" onclick="revealVideo('video','youtube')">
+			    <a href="#"><img src="assets/img/Play%20Video.svg" class="img-fluid" id="play" style="padding-left: 3px;"></p></a>
+		</span>
   
 
 
@@ -334,10 +331,18 @@ All in all, Gabriel accurately represented his skill level, and helped us tremen
                 <div class="row">
                     <div class="col-auto col-sm-12 col-md-12 col-lg-6 col-xl-6 offset-lg-0" id="contc"><img class="flex-sm-shrink-1 img-fluid" img-fluid" src="assets/img/contact.svg" style="padding-top: 24px;padding-right: 0px;padding-left: 19px;">
                         <p style="max-width: 430px;height: 131px;padding-right: -6px;padding-left: 20px;"><br>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."<br>"There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."<br><br></p>
-                        <div
-                            class="form-group float-right float-lg-right float-xl-right" style="border-style: none;border-bottom-style: none;"><input class="float-right" type="text" name="Name" value="Name" style="width: 350px;border-style: none;border-color: rgb(33,35,38);border-bottom-style: solid;border-bottom-color: rgb(0,0,0);"><input class="float-right" type="email"
-                                name="Email" value="Email" style="width: 350px;border-style: none;border-color: rgb(0,0,0);border-bottom-style: solid;"><textarea class="float-right" style="width: 350px;border: 1px solid rgba(39,43,48,0) ;border-bottom-color: rgb(7,7,7);"
-                                name="Message">Message</textarea><img class="float-right" src="assets/img/submit.svg"></div>
+                        
+					<div
+                            class="form-group float-right float-lg-right float-xl-right" style="border-style: none;border-bottom-style: none;">
+							
+						<form method="post" action="send_mail.php">
+								<p><input class="float-right" type="text" name="first_name" value="first_name" style="width: 350px;border: 1px solid rgba(39,43,48,0) ;border-bottom-color: rgb(7,7,7);">Name</p>
+								<p><input class="float-right" type="email_address"
+                                name="email_address" value="Email" style="width: 350px;border: 1px solid rgba(39,43,48,0) ;border-bottom-color: rgb(7,7,7);">Email</p>
+								<p><textarea class="float-right" style="width: 350px;border: 1px solid rgba(39,43,48,0) ;border-bottom-color: rgb(7,7,7);"name="comments">Message</textarea></p>
+							<p class="float-right"><button><img src="assets/img/submit.svg" class="img-fluid"></button></p>
+						</form>
+					</div>
                 </div>
                 <div class="col-auto col-sm-12 col-md-12 col-lg-6 col-xl-6 offset-lg-0" id="contc-1" style="background: #e9ecef;">
                     <p style="max-width: 430px;height: 231px;padding-right: -6px;padding-left: 100px;padding-top: 51px;"><strong>Get in Touch:</strong><br><br>Whether you’re a client trying to meet specific business goals with your web presence or an agency wanting to provide your clients with the best solutions, I am here to be your partner.&nbsp;<br></p>
