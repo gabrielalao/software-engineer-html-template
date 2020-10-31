@@ -98,13 +98,13 @@
 .lightbox {
   background-color: fade(black, 80%);  
   overflow: scroll;
-  position: fixed;
+  position: absolute;
   display: none;
   z-index: 1;
-  bottom: 0;
+  bottom: 40px;
   right: 0;
   left: 0;
-  top: 20px;
+  top: 40px;
   
   &-container {
     position: relative;
