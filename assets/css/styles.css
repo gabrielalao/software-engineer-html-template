@@ -100,11 +100,11 @@
   overflow: scroll;
   position: absolute;
   display: none;
-  z-index: 1;
-  bottom: 40px;
+  z-index: 0;
+  bottom: 0;
   right: 0;
   left: 0;
-  top: 40px;
+  top: 0;
   
   &-container {
     position: relative;
