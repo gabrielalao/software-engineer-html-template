@@ -100,7 +100,7 @@
   overflow: scroll;
   position: absolute;
   display: none;
-  z-index: 0;
+  z-index: 3;
   bottom: 0;
   right: 0;
   left: 0;
