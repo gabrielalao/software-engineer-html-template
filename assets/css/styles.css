@@ -108,7 +108,7 @@
   
   &-container {
     position: relative;
-    max-width: 640px;
+    max-width: 860px;
     margin: 7% auto;
     display: block;    
     padding: 0 3%;
@@ -149,7 +149,7 @@
 .video-container {  
     padding-bottom: 66.25%;
     position: relative;  
-    padding-top: 70px; 
+    padding-top: 20px; 
     overflow: hidden;
     height: 0; 
 }
@@ -158,8 +158,8 @@
 .video-container object,
 .video-container embed {
     position: absolute;
-    height: 60%;  
-    width: 60%;  
+    height: 80%;  
+    width: 80%;  
     left: 0;  
     top: 0;
 }
