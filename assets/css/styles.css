@@ -157,7 +157,7 @@
 .video-container iframe,
 .video-container object,
 .video-container embed {
-    position: fixed;
+    position: absolute;
     height: 60%;  
     width: 60%;  
     left: 0;  
