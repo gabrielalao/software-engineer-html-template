@@ -98,9 +98,9 @@
 .lightbox {
   background-color: fade(black, 80%);  
   overflow: scroll;
-  position: fixed;
+  position: absolute;
   display: none;
-  z-index: 1;
+  z-index: 3;
   bottom: 0;
   right: 0;
   left: 0;
@@ -108,7 +108,7 @@
   
   &-container {
     position: relative;
-    max-width: 960px;
+    max-width: 860px;
     margin: 7% auto;
     display: block;    
     padding: 0 3%;
@@ -149,7 +149,7 @@
 .video-container {  
     padding-bottom: 66.25%;
     position: relative;  
-    padding-top: 40px; 
+    padding-top: 20px; 
     overflow: hidden;
     height: 0; 
 }
